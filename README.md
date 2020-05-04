@@ -37,6 +37,23 @@ DVWA-VM1 and DVWA-VM2 do not have a built-in public IP. They can be reached thro
 
 A summary of the access policies in place can be found in the table below.
 
+
+| Name        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| Jump-Box-Provisioner      | right-aligned | $1600 |
+| DVWA-VM1      | centered      |   $12 |
+| DVWA-VM2
+| Elk-Server      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
  
 		
 		

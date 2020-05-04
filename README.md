@@ -1,7 +1,8 @@
 # Cybersecurity2020
 # Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
- 
+ Virtual Network Diagram
+![alt text](https://github.com/kandang0/Cybersecurity2020/blob/master/Diagrams/Diagram1.jpg "Virtual Network Diagram")
  
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -25,6 +26,12 @@ Filebeat log information about the file system, including which files have chang
 What does Metricbeat record?
 Metricbeat record system performance metric such as CPU usage, memory, and load. In dockerized environments, Metricbeat can be installed on a host for monitoring container performance metrics.
 The configuration details of each machine may be found below:
+| Name                      | Function                    | IP Address                 |   Operating System
+| --------------------------|:---------------------------:|:--------------------------:|:------------------- |
+| Jump-Box-Provisioner      | Gateway                     | 10.0.0.4/Dynamic Public IP |   Linux
+| DVWA-VM1                  | Web Server                  | 10.0.0.5/13.77.173.56      |   Linux
+| DVWA-VM2                  | Backup Web Server  	  | 10.0.0.7/13.77.173.56      |   Linux
+| Elk-Server                | Network Security Monitoring | 13.77.139.204              |   Linux
  
 ## II.	Access Policies
 The machines on the internal network are not exposed to the public Internet.
@@ -35,8 +42,15 @@ HTTP traffic towards the web servers is filtered through the load balancer befor
 DVWA-VM1 and DVWA-VM2 do not have a built-in public IP. They can be reached through the public IP of the load balancer, 13.77.173.56.
 
 A summary of the access policies in place can be found in the table below.
+| Name                      | Publicly Accessible  | Allowed IP Addresses       |   
+| --------------------------|:---------------------:|:--------------------------:|
+| Jump-Box-Provisioner      | No                    | Home Public Ip             |  
+| DVWA-VM1                  | Yes                   | Any                        |  
+| DVWA-VM2                  | Yes  	            | Any                        |  
+| Elk-Server                | No                    | Home Public IP             |   
 
- 
+
+
 		
 		
 ## III.	Elk Configuration

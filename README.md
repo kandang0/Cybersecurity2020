@@ -1,7 +1,8 @@
 # Cybersecurity2020
 # Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
- 
+ Virtual Network Diagram
+![alt text](https://github.com/kandang0/Cybersecurity2020/blob/master/Diagrams/Diagram1.jpg "Virtual Network Diagram")
  
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the Playbook file may be used to install only certain pieces of it, such as Filebeat.
 

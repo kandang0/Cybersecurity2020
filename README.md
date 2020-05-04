@@ -38,23 +38,13 @@ DVWA-VM1 and DVWA-VM2 do not have a built-in public IP. They can be reached thro
 A summary of the access policies in place can be found in the table below.
 
 
-| Name        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| Jump-Box-Provisioner      | right-aligned | $1600 |
-| DVWA-VM1      | centered      |   $12 |
-| DVWA-VM2
-| Elk-Server      |    $1 |
+| Name                      | Function          | IP Address  |   Operating System
+| --------------------------|:-------------:|:-------------:|:------------------- |
+| Jump-Box-Provisioner      | Gateway | 10.0.0.4/Dynamic Public IP |   Linux
+| DVWA-VM1                  | Web Server      |   10.0.0.5/13.77.173.56 |
+| DVWA-VM2                  | Backup Web Server   |   10.0.0.7/13.77.173.56
+| Elk-Server                |    Network Security Monitoring |   13.77.139.204
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
- 
 		
 		
 ## III.	Elk Configuration

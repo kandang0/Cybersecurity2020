@@ -71,7 +71,7 @@ dpkg -i filebeat-7.4.0-amd64.deb
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
  Docker ps: 
 ![alt text](https://github.com/kandang0/Cybersecurity2020/blob/master/Diagrams/Picture1.JPG "Docker ps")
-Target Machines & Beats
+###Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 1.	DVWA-VM1		IP Address: 10.0.0.5
 2.	DVWA-VM2		IP Address: 10.0.0.7
